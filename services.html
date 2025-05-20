@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Work Dekho</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .services-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-page p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Work Dekho</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services-page">
+      <h1>Explore Our Freelance Services</h1>
+      <p>Choose from a wide range of professional services offered by talented freelancers.</p>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <i class="fas fa-code service-icon"></i>
+          <h3>Web Development</h3>
+          <p>Build websites, web apps, and backend systems tailored to your needs.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-paint-brush service-icon"></i>
+          <h3>Graphic Design</h3>
+          <p>Create logos, posters, banners, and branding materials that stand out.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-bullhorn service-icon"></i>
+          <h3>Digital Marketing</h3>
+          <p>Boost your business with SEO, social media marketing, and PPC ads.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-pen-nib service-icon"></i>
+          <h3>Content Writing</h3>
+          <p>Get compelling blog posts, website content, and copywriting services.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-video service-icon"></i>
+          <h3>Video Editing</h3>
+          <p>Edit YouTube videos, promos, and reels with a creative touch.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-language service-icon"></i>
+          <h3>Translation Services</h3>
+          <p>Translate documents or websites with accuracy and cultural relevance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Work Dekho. All rights reserved.
+      <br> Made by Bhaskar 😁
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
