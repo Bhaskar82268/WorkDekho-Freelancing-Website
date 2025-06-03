@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
             if (password_verify($password, $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['user_name'] = $user['fullname']; // use fullname
-                header("Location: index.html"); // Redirect to home
+                header("Location: dashboard.php"); // Redirect to home
                 exit;
             } else {
                 echo "<script>alert('Incorrect password');</script>";
