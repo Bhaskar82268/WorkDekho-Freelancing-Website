@@ -8,24 +8,44 @@ if (!isset($_SESSION['user_id'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Work Dekho</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Work Dekho</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="logout.php">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?>!</h1>
-        <p>You are now logged in to your dashboard.</p>
-    </section>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Work Dekho</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Hi <strong><?php echo htmlspecialchars($_SESSION['user_name']); ?></strong>, explore services or manage your profile below.</p>
+    <a href="services.html" class="cta-button">Browse Services</a>
+  </section>
+
+  <section id="dashboard-content">
+    <div class="container">
+      <h2>Your Account</h2>
+      <ul>
+        <li><a href="viewprofile.php">View Profile</a></li>
+        <li><a href="editprofile.php">Edit Profile</a></li>
+        <li><a href="#">Job History</a></li>
+        <li><a href="settings.php">Settings</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Work Dekho. All rights reserved.</p>
+  </footer>
 </body>
 </html>
